@@ -17,14 +17,16 @@
         </div>
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-5">
                     <h4>Query</h4>
                     <textarea id="query-editor" class="form-control" rows="10"></textarea>
                     <div>
                         <button type="button" class="btn btn-default" ng-click="ctrl.loadQuery()">RUN QUERY</button>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-5">
                     <uib-tabset active="active">
                         <uib-tab index="0">
                             <uib-tab-heading>
@@ -43,32 +45,32 @@
                                 <!-- Table -->
                                 <table class="datatable table table-striped table-bordered display">
                                     <thead>
-                                        <tr>
-                                            <td>#</td>
-                                            <td>Heading 1</td>
-                                            <td>Heading 2</td>
-                                            <td>Heading 3</td>
-                                            </tr>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>Heading 1</td>
+                                        <td>Heading 2</td>
+                                        <td>Heading 3</td>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Data 1</td>
-                                            <td>Data 2</td>
-                                            <td>Data 3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Data 1</td>
-                                            <td>Data 2</td>
-                                            <td>Data 3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Data 1</td>
-                                            <td>Data 2</td>
-                                            <td>Data 3</td>
-                                        </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Data 1</td>
+                                        <td>Data 2</td>
+                                        <td>Data 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Data 1</td>
+                                        <td>Data 2</td>
+                                        <td>Data 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Data 1</td>
+                                        <td>Data 2</td>
+                                        <td>Data 3</td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -77,5 +79,6 @@
                 </div>
             </div>
         </div>
+        {{ ctrl.tableData | json }}
     </div>
 </div>
