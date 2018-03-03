@@ -46,7 +46,6 @@ import {LaunchTypeService} from "./services/launchtype/LaunchTypeService";
 import {IdGeneratorDirective} from "./components/directives/IdGeneratorDirective";
 
 const App: ng.IAngularStatic = angular;
-const appVersion: String = "9.2.0-SNAPSHOT";
 
 const module: ng.IModule = angular.module("managementConsole", [
   "ui.router",
