@@ -32,53 +32,21 @@
                             <uib-tab-heading>
                                 JSON
                             </uib-tab-heading>
-                            <textarea class="form-control" rows="10" id="query-json-result"></textarea>
+                            <div class="panel panel-default">
+                                <code-mirror code-mirror-obj="ctrl.codeMirror"></code-mirror>
+                            </div>
                         </uib-tab>
                         <uib-tab index="1">
                             <uib-tab-heading>
                                 Table
                             </uib-tab-heading>
                             <div class="panel panel-default">
-                                <!-- Default panel contents -->
-                                <div class="panel-heading">Query Results</div>
-
-                                <!-- Table -->
-                                <table class="datatable table table-striped table-bordered display">
-                                    <thead>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>Heading 1</td>
-                                        <td>Heading 2</td>
-                                        <td>Heading 3</td>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Data 1</td>
-                                        <td>Data 2</td>
-                                        <td>Data 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Data 1</td>
-                                        <td>Data 2</td>
-                                        <td>Data 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Data 1</td>
-                                        <td>Data 2</td>
-                                        <td>Data 3</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <query-results-table table-data="ctrl.tableData"></query-results-table>
                             </div>
                         </uib-tab>
                     </uib-tabset>
                 </div>
             </div>
         </div>
-        {{ ctrl.tableData | json }}
     </div>
 </div>

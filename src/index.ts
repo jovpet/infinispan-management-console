@@ -28,6 +28,8 @@ import "./components/cache-stores/CacheStoreModal";
 import "./components/cache-configuration/CacheConfiguration";
 import "./components/endpoint-configuration/EndpointConfiguration";
 import "./components/configuration-section/ConfigurationSection";
+import "./components/codemirror/CodeMirror";
+import "./components/query-results-table/QueryResultsTable";
 import "./components/forms/field-info/FieldInfo";
 import "./components/forms/form-group/FormGroup";
 import "./components/memory/Memory";
@@ -69,6 +71,8 @@ App.element(document).ready(() => {
     "managementConsole.components.configuration",
     "managementConsole.components.configuration.cache",
     "managementConsole.components.configuration.endpoint",
+    "managementConsole.components.codemirror",
+    "managementConsole.components.query-results-table",
     "managementConsole.components.forms.field-info",
     "managementConsole.components.forms.form-group",
     "managementConsole.components.modals.information",
